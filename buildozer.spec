@@ -1,6 +1,7 @@
 [app]
 
 title = Attendance Tracker
+icon.filename = %(source.dir)s/icon.png
 package.name = attendancetracker
 package.domain = org.attendance
 
