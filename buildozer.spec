@@ -19,8 +19,9 @@ android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
 android.api = 33
 android.minapi = 21
 
+# Explicitly match the NDK version provided on the runner
+android.ndk = 27b
 android.archs = arm64-v8a, armeabi-v7a
-
 android.accept_sdk_license = True
 
 [buildozer]
