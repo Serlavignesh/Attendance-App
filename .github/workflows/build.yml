@@ -13,11 +13,11 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build with Buildozer
-      uses: kivy/buildozer-action@v0.3.0
+      uses: ArtemSBulgakov/buildozer-action@v1
+      id: buildozer
       with:
-        filename: buildozer.spec
-      env:
-        ANDROID_API: "33"
+        buildozer_version: stable
+        command: buildozer -v android debug
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
