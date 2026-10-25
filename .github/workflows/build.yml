@@ -24,10 +24,11 @@ jobs:
           git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config \
           zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo6 cmake libffi-dev libssl-dev
 
-    - name: Install Buildozer and Cython
+    - name: Install Buildozer, Cython, and Compatible Toolchain
       run: |
-        pip install --upgrade pip
-        pip install Cython==0.29.36 buildozer
+        python -m pip install --upgrade "pip<24.4"
+        pip install "Cython==0.29.36" "buildozer==1.5.0"
+        pip install --upgrade git+https://github.com/kivy/python-for-android.git
 
     - name: Build with Buildozer
       run: |
