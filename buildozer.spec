@@ -24,7 +24,7 @@ version = 1.0
 requirements = python3,kivy
 
 # (str) Supported orientations
-orientation = all
+orientation = portrait 
 
 # (list) Permissions
 android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
